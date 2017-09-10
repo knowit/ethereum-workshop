@@ -13,3 +13,5 @@
     * Når du har verifisert at du er koblet til testnettet vil testnet-blockchainen lastes ned, og det skal bare være å ha denne kjørende i bakgrunnen en stund så du kommer i sync. 
 
 5. Når det kommer til Ether på testnettet er dette noe vi kan provide under workshoppen :)
+
+Nedlastning av virtuell maskin: https://drive.google.com/file/d/0B7hH5Ns5xLvhNjhIUm5TQnRrZWs/view
