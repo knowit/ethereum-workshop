@@ -15,6 +15,9 @@
 5. Når det kommer til Ether på testnettet er dette noe vi kan provide under workshoppen :)
 
 Nedlastning av virtuell maskin: https://drive.google.com/file/d/0B7hH5Ns5xLvhNjhIUm5TQnRrZWs/view
+# Gitter
+
+https://gitter.im/ethereum-javazone-workshop/Lobby?source=orgpage 
 
 # Troubleshooting
 
