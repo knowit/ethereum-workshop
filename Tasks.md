@@ -8,11 +8,13 @@ The tasks should be done in order, from top to bottoms, since some might depend 
 1. Since we want to have an admin with more privileges we will do this in the constructor, and set the admin to the address that deploys the contract Please initialize the 'admin' member in the constructor, and implement 'isAccountAdmin' to return true or false based on if the caller equals the admin address or not.
 
 
-2. Implement 'createAccount' where a new 'Account' will be created. An account should have the following members: 
+2. Implement 'createAccount' where a new 'Account' will be created. An account struct should have the following members: 
 - 'addr' - ethereum address to the user
 - 'balance' - the balance as an integer
 - 'validated' - a boolean that describes wether the user have been validated by an admin
-- 'exist' - a boolean that describes wether the user exist
+- 'exist' - a boolean that describes wether the account exist
+- 'name' - name of the account holder
+- 'email' - email address of the account holder
 
 When a new user is created, it should have validated=false, since this is done later by an administrator.
 
@@ -32,17 +34,19 @@ Also implement 'getBalance(address _addr)' to return the balance of '_addr'.
 
 Hint: you will need an extra data structure, since you can't loop over a mapping. Add users to this data structure when they are validated.
 
-7. Implement 'getNumberOfValidatedAccounts()'.
+7. Implement 'getNumberOfValidatedAccounts()'. The function should return an uint with the number of validated accounts.
 
-8. Implement 'markForPayOutOnNextSalary' and 'payOutOnNextSalary'. The first one is for a administrator to perform on any account, and the second is for an account to perform on himself. Both should mark an amount for being payed out the next time the company pays out salary. 
+8. Imagin that this is an mini salary system for a company, and that the accounts has a balance that they can choose to pay out on the next salary. Implement 'markForPayOutOnNextSalary' and 'payOutOnNextSalary'. The first one is for a administrator to perform on any account, and the second is for an account to perform on himself. Both should mark an amount for being payed out the next time the company pays out salary. 
 
 Again you will have to store this information in a data structure you can loop over easily.
 
-In this exercise you should also modify some of the frontend code to make it work. This will be done on line 190 in app.js.
+In this exercise you should also modify some of the frontend code to make it work. This will be done on line 189 in app.js.
 
-Then implement 'payout'. Here you will loop over the users that have marked an amount for payout, and you should remove this amount from their balance. Imagine now that the users will get this money payed out in a currency like NOK, but you don't have to worry about how they will do that.. :) There is also some frontend code to complete for this, so please take a look at line 204 in app.js.
+Then implement 'payout'. Here you will loop over the users that have marked an amount for payout, and you should remove this amount from their balance. Imagine now that the users will get this money payed out in a currency like NOK, but you don't have to worry about how they will do that.. :) There is also some frontend code to complete for this, so please take a look at line 202 in app.js.
 
 Are all the tests green now? :)
+
+9. Add events for all the functions that change the state of the blockchain (all none getters). Events will help a frontend like Mist show transactions in real time before they are written to the blockchain.
 
 ## Useful links
 - Solidity documentation http://solidity.readthedocs.io/en/develop/index.html

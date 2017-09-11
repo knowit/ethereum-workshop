@@ -79,9 +79,5 @@ contract Coinit {
     
     event Genesis(address indexed _admin);
 
-    event MarkForPayOut(address indexed _account, int _value);
-
-    event PayOut(address indexed _account, int _value);
-
 
 }
