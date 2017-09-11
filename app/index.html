@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coinit</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+
+
+  <br>
+  <h1>Create account</h1>
+  <br><label for="name">Name</label><input type="text" id="name" placeholder="e.g., Sigurd"></input>
+  <br><label for="email">Email</label><input type="text" id="email" placeholder="e.g., sigurd.l@jokere.no"></input>
+  <br><label for="createdropdown">To Address:</label><select id="createdropdown"></select>
+  <br><br><button id="create" onclick="App.createAccount()">Create Account</button>
+  <br><br>
+
+  <br>
+  <h1>Is account admin?</h1>
+  <br><label for="isadmin">Name</label><div type="text" id="isadmin" placeholder="e.g., 95">_</div>
+  <br><label for="admindropdown">Address:</label><select id="admindropdown"></select>
+  <br><br><button id="create" onclick="App.isAccountAdmin()">Is account admin?</button>
+  <br><br>
+  <br>
+
+  <br>
+  <h1>Send money to other account</h1>
+  <br><label for="amount2">Amount:</label><input type="text" id="amount2" placeholder="e.g., 95"></input>
+  <br><label for="fromdropdown">From:</label><select id="fromdropdown"></select>
+  <br><label for="todropdown">To:</label><select id="todropdown"></select>
+  <br><br><button id="create" onclick="App.sendCoin()">Transfer coins!</button>
+  <br><br>
+  <br>
+
+  <h1>Get Balance of Coinit and account info</h1>
+  <br><label for="balance2">Balance of Coinit's:</label><div type="text" id="balance2" placeholder="e.g., 95">_</div>
+  <br><label for="name1">Does account exist?</label><div type="text" id="name1">_</div>
+    <!-- <br><label for="email1">Email:</label><div type="text" id="email1">_</div> -->
+  <br><label for="address">Address:</label><select id="drop"></select>
+  <br><br><button id="get" onclick="App.getCoin()">Get balance</button>
+  <br><br>
+  <br>
+
+  <h1>Payout on next salary</h1>
+  <br><label for="amount3">Amount:</label><input type="text" id="amount3" placeholder="e.g., 95"></input>
+  <br><label for="payoutonnext">Address:</label><select id="payoutonnext"></select>
+  <br><br><button id="nextsalarybutton" onclick="App.payOutOnNextSalary()">Payout next salary!</button>
+  <br><br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <h1>Admin features</h1>
+  <br>
+  <br>
+  <h1>Send Coinit to all</h1>
+  <br><br><button id="sendtoall" onclick="App.createAndGiveMoneyToAllEmployees()">Send 100 coinit to everyone</button>
+  <br><br>
+
+  
+  <h1>Validate Account</h1>
+  <br><label for="employee">Address:</label><select id="employee"></select>
+  <br><br><button id="sendtoall" onclick="App.validateEmployee()">Validate</button>
+  <br><br>
+  <br>
+
+  <h1>Payout outstanding account salaries</h1>
+  <br><br><button id="payout" onclick="App.payOut()">Payout outstanding salaries</button>
+  <br><br>
+  <br>  
+
+  <h1>Send and create Coinit to address</h1>
+  <br><label for="amount">Amount:</label><input type="text" id="amount" placeholder="e.g., 95"></input>
+  <br><label for="receiver">To Address:</label><select id="sendDropdown"></select>
+  <br><br><button id="send" onclick="App.createAndSendCoin()">Send Coinit</button>
+  <br><br>
+  <br>
+  <span class="hint"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
+</body>
+</html>
