@@ -48,6 +48,8 @@ Are all the tests green now? :)
 
 9. Add events for all the functions that change the state of the blockchain (all none getters). Events will help a frontend like Mist show transactions in real time before they are written to the blockchain.
 
+10. Compile the contract in the Remix browser and deploy it in Mist on the Rinkeby testnet. Go together with the person next to you, and watch each other contracts and make transactions on them. We will demonstrate how to do this.
+
 ## Useful links
 - Solidity documentation http://solidity.readthedocs.io/en/develop/index.html
 - Solidity online editor https://ethereum.github.io/browser-solidity/
