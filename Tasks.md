@@ -1,8 +1,8 @@
 Coinit
 
-The excercises are about making a token that works like a private currency where someone has admin priviliges to create tokens. It should be possible to create new users, and an administrator can create tokens and send to its users. Every user has a balance of tokens, and they are allowed to send the tokens between each other. Imagine that this is a token for a company where the employees have an internal economic system.
+The excercises are about making a token that works like a private currency where someone has admin priviliges to create tokens. It should be possible to create new users, and an administrator can create new tokens and send to its users. Every user has a balance of tokens, and they are allowed to send the tokens between each other. Imagine that this is a token for a company where the employees have an internal economic system.
 
-The tasks should be done in order, from top to bottoms, since some might depend on the previous step. Every task has at least one test that should complete without errors with a correct implementation.
+The tasks should be done in order, from top to bottom, since some might depend on the previous step. Every task has at least one test that should complete without errors with a correct implementation.
 
 
 1. Since we want to have an admin with more privileges we will do this in the constructor, and set the admin to the address that deploys the contract Please initialize the 'admin' member in the constructor, and implement 'isAccountAdmin' to return true or false based on if the caller equals the admin address or not.
@@ -36,7 +36,7 @@ Hint: you will need an extra data structure, since you can't loop over a mapping
 
 7. Implement 'getNumberOfValidatedAccounts()'. The function should return an uint with the number of validated accounts.
 
-8. Imagin that this is an mini salary system for a company, and that the accounts has a balance that they can choose to pay out on the next salary. Implement 'markForPayOutOnNextSalary' and 'payOutOnNextSalary'. The first one is for a administrator to perform on any account, and the second is for an account to perform on himself. Both should mark an amount for being payed out the next time the company pays out salary. 
+8. Imagin that this is an mini salary system for a company, and that the accounts has a balance that they can choose to pay out on the next salary. Implement 'markForPayOutOnNextSalary' and 'payOutOnNextSalary'. The first one is for a administrator to perform on any account, and the second is for an account to perform on itself. Both should mark an amount for being payed out the next time the company pays out salary. 
 
 Again you will have to store this information in a data structure you can loop over easily.
 
