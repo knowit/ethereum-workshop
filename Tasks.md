@@ -30,7 +30,7 @@ Also implement 'getBalance(address _addr)' to return the balance of '_addr'.
 
 5. Implement 'sendCoin'. This function is for everybody to send tokens to each other. It should not be possible to send more tokens than the user has.
 
-6. Implement 'createAndGiveMoneyToAllUsers'. This function should add an amount to all the user accounts that are validated. How will you structure the data in order to accomplish this?
+6. Implement 'createAndGiveMoneyToAllValidatedAccounts'. This function should add an amount to all the user accounts that are validated. How will you structure the data in order to accomplish this?
 
 Hint: you will need an extra data structure, since you can't loop over a mapping. Add users to this data structure when they are validated.
 
