@@ -5,7 +5,7 @@ Det skal være mulig å få til oppsettet på både Mac, Windows og Linux, men m
 
 # Installasjon
 1. Installer npm og node. Velg LTS slik at du får node versjon 6.x. Hvordan det gjøres finnes på https://nodejs.org/en/download/current/
-2. Installer truffle ved å kjøre `npm install -g truffle` og `npm install -g ethereumjs-testrpc`
+2. Installer truffle ved å kjøre `npm install -g truffle ethereumjs-testrpc`
 3. Sett opp prosjektet
     * Dra ned dette repoet med kommandoen `git clone https://github.com/knowit/ethereum-workshop`.
     * Gå inn i mappen som er blitt klonet (`$ cd ethereum-workshop`), kjør først kommandoen `npm install` og så `truffle migrate`.
@@ -14,7 +14,11 @@ Det skal være mulig å få til oppsettet på både Mac, Windows og Linux, men m
     * Åpne prosjektet i din favoritt editor. Solidity, som er språket vi for det meste skal kode i, er støttet av de fleste IDE hvis man installerer en ekstra plugin.
 
 # Virtuell maskin
-Nedlastning av virtuell maskin: https://drive.google.com/file/d/0B7hH5Ns5xLvhNjhIUm5TQnRrZWs/view
+
+1. Last ned [Virtualbox](https://www.virtualbox.org/wiki/Downloads) og installer programmet.
+2. Last ned VM [imaget](https://drive.google.com/file/d/0B7hH5Ns5xLvhNjhIUm5TQnRrZWs/view) som vi har gjort klart. Alt du trenger ligger i dette imaget.
+3. Følg [guide fra Oracle](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) på hvordan man kan legge til dette bildet i Virtualbox.
+
 
 # Troubleshooting
 
