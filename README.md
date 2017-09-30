@@ -1,4 +1,7 @@
 # NB!
+
+[![Join the chat at https://gitter.im/knowit/ethereum-workshop](https://badges.gitter.im/knowit/ethereum-workshop.svg)](https://gitter.im/knowit/ethereum-workshop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Hvis du støter problemer under innstallasjon på egen maskin, kan du hoppe over dette og heller bruke en `Virtuell maskin` som beskrevet lenger ned. 
 
 Det skal være mulig å få til oppsettet på både Mac, Windows og Linux, men merk at Windows er mindre testet, så hvis du får problemer her så anbefaler vi å bruke en `Virtuell maskin`.
