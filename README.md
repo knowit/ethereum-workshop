@@ -14,6 +14,8 @@ Det skal være mulig å få til oppsettet på både Mac, Windows og Linux, men m
     * Åpne prosjektet i din favoritt editor. Solidity, som er språket vi for det meste skal kode i, er støttet av de fleste IDE hvis man installerer en ekstra plugin.
 
 # Virtuell maskin
+Dersom du fikk til å installere alt på maskinen din under `Installasjon`, så kan du hoppe over dette. 
+Det er ment som et alternativ til de som har problemer med å få ting satt opp riktig, eller ikke ønsker å installere det på egen maskin.
 
 1. Last ned [Virtualbox](https://www.virtualbox.org/wiki/Downloads) og installer programmet.
 2. Last ned VM [imaget](https://drive.google.com/file/d/0B7hH5Ns5xLvhNjhIUm5TQnRrZWs/view) som vi har gjort klart. Alt du trenger ligger i dette imaget.
