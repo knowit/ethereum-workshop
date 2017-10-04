@@ -15,6 +15,14 @@ Det skal være mulig å få til oppsettet på både Mac, Windows og Linux, men m
     * Til slutt må man kjøre kommandoen `npm run dev` som starter webpack-dev-serveren på `localhost:8080`
     * Gå inn på siden for å verifisere at den kjører. Du vil ikke kunne bruke denne siden før deler av workshopen er løst.
     * Åpne prosjektet i din favoritt editor. Solidity, som er språket vi for det meste skal kode i, er støttet av de fleste IDE hvis man installerer en ekstra plugin.
+4. Sjekk at `truffle` er installert ved å skrive `$ truffle version` i terminalen. Kommandoen skal skrive noe i terminalen som dette:
+```bash
+$ truffle version
+Truffle v3.4.9 (core: 3.4.8)
+Solidity v0.4.15 (solc-js)
+```
+5. For å kjøre opp en lokal instans av ethereum-blockchain på maskinen din nå du skrive `testrpc`.
+NB: Hver gang du vil teste om smart-kontrakten din er skrevet riktig, så kan du kjøre testene med kommandoen `truffle test`. For å kompilere må du skrive `truffle compile`.
 
 # Virtuell maskin
 Dersom du fikk til å installere alt på maskinen din under `Installasjon`, så kan du hoppe over dette. 
