@@ -1,5 +1,7 @@
 # NB!
 
+For english readme see [README.English.md](https://github.com/knowit/ethereum-workshop/blob/master/README.English.md).
+
 [![Join the chat at https://gitter.im/knowit-blockchain-workshop](https://badges.gitter.im/knowit/ethereum-workshop.svg)](https://gitter.im/knowit-blockchain-workshop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Hvis du støter problemer under innstallasjon på egen maskin, kan du hoppe over dette og heller bruke en `Virtuell maskin` som beskrevet lenger ned. 
@@ -30,8 +32,11 @@ Truffle v3.4.9 (core: 3.4.8)
 Solidity v0.4.15 (solc-js)
 ```
 
-5. For å kjøre opp en lokal instans av ethereum-blockchain på maskinen din nå du skrive `testrpc`.
+6. For å kjøre opp en lokal instans av ethereum-blockchain på maskinen din nå du skrive `testrpc`.
 NB: Hver gang du vil teste om smart-kontrakten din er skrevet riktig, så kan du kjøre testene med kommandoen `truffle test`. For å kompilere må du skrive `truffle compile`.
+
+# Oppgavene
+Oppgavene for workshoppen finner du [her](https://github.com/knowit/ethereum-workshop/blob/master/Tasks.md) under Tasks.md.
 
 # Virtuell maskin
 Dersom du fikk til å installere alt på maskinen din under `Installasjon`, så kan du hoppe over dette. 

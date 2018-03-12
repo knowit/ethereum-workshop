@@ -27,7 +27,6 @@ Solidity v0.4.15 (solc-js)
 5. To run a local copy of the ethereum blockchain on your computer run the following command in another terminal window: `testrpc`. To compile the smart contract write `truffle compile`
 NB: Every time you want to test if your smart contract is correct, run `truffle test`.
 
-
 6. Setting up the project
     * Download the workshop repository by using the following command `git clone https://github.com/knowit/ethereum-workshop`.
     * Enter the folder that you just cloned (`cd ethereum-workshop`), Run the following commands `npm install` then `truffle migrate`.
@@ -35,6 +34,9 @@ NB: Every time you want to test if your smart contract is correct, run `truffle 
     * Make sure that the site is running OK. The functionality on the site is not working yet, but that is because we have to do some coding on our own :)
     * Åpne prosjektet i din favoritt editor. Solidity, som er språket vi for det meste skal kode i, er støttet av de fleste IDE hvis man installerer en ekstra plugin.
     * Open the project in your favorite editor. Solidity, which is the language we are going to do most of our work in is supported by most IDEs by installing a Solidity plugin.
+
+# Tasks
+You can find the tasks for the workshop [here](https://github.com/knowit/ethereum-workshop/blob/master/Tasks.md) under Tasks.md.
 
 # Virtual Machine
 
