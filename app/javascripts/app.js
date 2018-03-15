@@ -15,7 +15,7 @@ var Coinit = contract(coinit_artifacts);
 // As your needs grow you will likely need to change its form and structure.
 // For application bootstrapping, check out window.addEventListener below.
 var accounts;
-var account;
+var admin;
 
 var populateDropdown = function(select, accounts) {
     for(var i = 0; i < accounts.length; i ++) {
@@ -46,7 +46,7 @@ window.App = {
       }
 
       accounts = accs;
-      account = accounts[0];
+      admin = accounts[0];
 
       var select =  document.getElementById("drop");
       var select2 = document.getElementById("sendDropdown");
@@ -121,7 +121,7 @@ window.App = {
     var coin;
     Coinit.deployed().then(function(instance) {
       coin = instance;
-      return coin.validateAccount.sendTransaction(address,{from: account});
+      return coin.validateAccount.sendTransaction(address,{from: admin});
     }).catch(function(e) {
       console.log(e);
     });
@@ -149,9 +149,9 @@ window.App = {
     var coin;
     Coinit.deployed().then(function(instance) {
       coin = instance;
-      return coin.createAndGiveMoneyToAllValidatedAccounts.sendTransaction(100, {from: account});
+      return coin.createAndGiveMoneyToAllValidatedAccounts.sendTransaction(100, {from: admin});
     }).then(function() {
-      console.log(account)
+      console.log(admin)
     }).catch(function(e) {
       console.log(e);
     });
@@ -168,7 +168,7 @@ window.App = {
     var coin;
     Coinit.deployed().then(function(instance) {
       coin = instance;
-      return coin.createAndSendCoin.sendTransaction(address, amount, {from: account});
+      return coin.createAndSendCoin.sendTransaction(address, amount, {from: admin});
     }).catch(function(e) {
       console.log(e);
     });
@@ -186,7 +186,7 @@ window.App = {
     Coinit.deployed().then(function(instance) {
       coin = instance;
       //Hvordan skal vi gjore payOutOnNextSalary?
-      return /*Skriv din kode her*/;
+      return coin.payOutOnNextSalary.sendTransaction(amount, {from: address});
     }).catch(function(e) {
       console.log(e);
     });
@@ -199,7 +199,7 @@ window.App = {
     Coinit.deployed().then(function(instance) {
       coin = instance;
       //Hvordan skal vi gjore payOut?
-      return /*Skriv din kode her*/;
+      return coin.payOut.sendTransaction({from: admin});
     }).catch(function(e) {
       console.log(e);
     });
